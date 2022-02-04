@@ -1,0 +1,515 @@
+:root {
+    --yellow: #FDE840;
+    --light-blue: #2EE5FF;
+    --blue: #01B6D0;
+    --dark-blue: #01B6D0;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gc-wax-orange: #FF774AFF;
+    --gc-anchor-blue: #3650A2FF;
+}
+
+@font-face {
+    font-family: "GT America", sans-serif;
+    src: url(/fonts/GT\ America\ Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Maler";
+    src: url(/fonts/Maler.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nico Moji";
+    src: url(/fonts/NicoMoji-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nosifer";
+    src: url(/fonts/16858.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nanum Brush Script";
+    src: url(/fonts/NanumBrushScript-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(/fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(/fonts/Montserrat-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(/fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(/fonts/Montserrat-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(/fonts/Montserrat-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: url(/fonts/SFUIText-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif ;
+    src: url(/fonts/Montserrat-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media (max-width: 1024px) {
+    body {
+        background: url(/resources/app/background/Uniswapia_3.gif) no-repeat -6vw;
+        background-size: 65vh;
+        background-attachment: fixed;
+        background-position: center;
+    }
+}
+
+.body-page {
+    color: white;
+    background:
+        url(/img/Uniswapia_2.gif) no-repeat 72vw,
+        url(/img/Uniswapia_3.gif) no-repeat -6vw,
+        url(/img/bg_general.jpg) no-repeat;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position-y: 10vh, 10vh, 0px;
+    background-position-x: 62vw, 0px, 0px;
+    background-size: 700px, 700px, cover;
+}
+
+@media (max-width: 1024px) {
+    .body-page {
+        color: white;
+        background: url(/img/bg_general.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+.body-collection {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/COLLECTION\ \(4\)\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-unpacking {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/Group\ 43.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-staking {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/bg_staking.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-tournament {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/TOURNAMENT\ _USERS\ INFORMATION\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-faucet {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/TOURNAMENT\ _USERS\ INFORMATION\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-market {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/TOURNAMENT\ _USERS\ INFORMATION\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.main-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 370%;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    max-width: 100vw;
+}
+
+.header-num {
+
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 7px;
+    font-family: "Nico Moji", serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: -0.155em;
+}
+
+.heading {
+    font-family: "Nico Moji";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.pool-list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nosifer";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 52px;
+    color: #2EE5FF;
+
+}
+
+.pool-item {
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #FDE840;
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 80px;
+    z-index: 1;
+}
+
+@media (max-width: 1024px) {
+    .pool-item {
+        text-align: center;
+        margin-left: 4px;
+        padding-top: 15px;
+        border: 1px solid #FDE840;
+        box-sizing: border-box;
+        position: relative;
+        width: 35px;
+        height: 80px;
+        z-index: 1;
+    }
+}
+
+.btn-wax {
+    background-color: var(--gc-wax-orange);
+    color: white;
+}
+
+.btn-anchor {
+    background-color: var(--gc-anchor-blue);
+    color: white;
+}
+
+.news-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    color: #0C2A3D;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+.news-body {
+    font-family: "Maler";
+}
+
+.goblet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.rewards-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 49px;
+    text-shadow: -2px 1px 0px #2EE5FF;
+    margin-top: 50px;
+}
+
+.rewards-list {
+    text-align: left;
+    align-content: center;
+    margin-left: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 32px;
+}
+
+.first-new {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 100px;
+}
+
+.footer-main-menu-paragraph {
+    color: #2EE5FF;
+}
+
+.main-card {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 0;
+    box-shadow: 2px 1px 5px rgba(234, 146, 62, 0.3);
+}
+
+.main-card {
+    border: 1px solid #FFFFFF;
+    padding: 10px 10px 30px 30px;
+}
+
+.main-card-border::after {
+    content: "";
+    display: block;
+    position: relative;
+    border: 1px solid #FDE840;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 0 0 -12px 18px;
+    left: 7%;
+    top: -5%;
+    z-index: 1;
+}
+
+.name-character {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+}
+
+.pack-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 35px;
+    margin-bottom: 0;
+    text-align: center;
+    position: relative;
+}
+
+
+.character-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.characteristic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.amountStackInput{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    margin: 0;
+}
+
+.custom-search-input {
+    background: none;
+    border: 1px solid #fde840;
+}
+
+.custom-search-input:focus {
+    background: none;
+    border: 1px solid #fde840;
+    --tw-ring-offset-color: #FDE840FF;
+    --tw-ring-color: #FDE840FF;
+}
+
+.custom-search-btn {
+    background: none;
+    border: 1px solid #fde840;
+}
+
+.card-button {
+    width: 109px;
+    height: 33px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #0C2A3D;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: -4px 3px 0px #2EE5FF;
+}
+
+.pagination {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#first-pagination {
+    width: 34px;
+    height: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#second-pagination {
+    width: 50px;
+    height: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+#first-pagination::placeholder {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2EE5FF;
+}
+
+#second-pagination::placeholder {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2EE5FF;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.chosen-card {
+    outline: 1px solid #2ee3fc;
+    outline-offset: 20px;
+}

@@ -1,0 +1,1306 @@
+:root {
+    --yellow: #FDE840;
+    --light-blue: #2EE5FF;
+    --blue: #01B6D0;
+    --dark-blue: #01B6D0;
+    --white: #FFFFFF;
+    --black: #000000;
+}
+
+@font-face {
+    font-family: "GT America", sans-serif;
+    src: url(fonts/GT\ America\ Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nico Moji";
+    src: url(fonts/NicoMoji-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nosifer";
+    src: url(fonts/16858.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Nanum Brush Script";
+    src: url(fonts/NanumBrushScript-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(fonts/Montserrat-SemiBoldItalic.ttf);
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(fonts/Montserrat-BoldItalic.ttf);
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    src: url(fonts/Montserrat-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "SF UI Text";
+    src: url(fonts/SFUIText-LightItalic.ttf);
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif ;
+    src: url(fonts/Montserrat-MediumItalic.ttf);
+    font-weight: 500;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-page {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/bg_general.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100vw;
+}
+
+.body-collection {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/COLLECTION\ \(4\)\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-unpacking {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/Group\ 43.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-staking {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/STAKING\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+.body-tournament {
+    background-color: var(--black);
+    color: var(--white);
+    background-image: url(/img/TOURNAMENT\ _USERS\ INFORMATION\ 1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    min-width: 100%;
+}
+
+
+img {
+    display: block;
+}
+
+.main-container {
+    padding-left: 268px;
+    padding-right: 269px;
+}
+
+/* Шапка */
+
+.main-header {
+    font-family: "GT America", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 100%;
+    background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.473965) 0%, rgba(0, 0, 0, 0) 71.99%);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.main-logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 0 70px 0;
+}
+
+.logo {
+    margin-right: 57px;
+    margin-top: 16px;
+    margin-left: 200px;
+
+}
+
+.logo-coin {
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 42px 269px;
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 30px;
+    padding-top: 28px;
+    padding-bottom: 37px;
+    padding-right: 25px;
+}
+
+.nav-item-dif {
+    list-style: none;
+    margin-left: 47px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+
+.active-block {
+    background: url(/img/yellow_x5F_button_1_.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Основной контент */
+
+.header-num {
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 7px;
+    font-family: "Nico Moji";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+    letter-spacing: -0.155em;
+}
+
+.header-num::after {
+    content: "";
+    display: block;
+    width: 30px;
+    padding-top: 3px;
+    border-bottom: 2px solid #2EE5FF;
+    position: absolute;
+}
+
+
+.welcome-section {
+    background: url(/img/girl\ 1.png) repeat-y, url(/img/girl\ 2.png) repeat-y 100% 0;
+    background-size: contain;
+    margin: -50px;
+}
+
+
+.heading {
+    font-family: "Nico Moji";
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.pool-list {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Nosifer";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 52px;
+    color: #2EE5FF;
+
+}
+
+.pool-item {
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 15px;
+    border: 1px solid #FDE840;
+    box-sizing: border-box;
+    position: relative;
+    width: 48px;
+    height: 80px;
+    z-index: 1;
+}
+
+.pool-item-wax {
+    font-family: "Nanum Brush Script";
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+li {
+    list-style: none;
+}
+
+.pool-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    width: 48px;
+    top: 3px;
+    left: -4px;
+    z-index: 10;
+    padding-bottom: 80px;
+}
+
+.arrow-down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 250px;
+
+}
+
+.news-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    color: #0C2A3D;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.first-new {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 35px;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.goblet {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.rewards-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 49px;
+    text-shadow: -2px 1px 0px #2EE5FF;
+    margin-top: 50px;
+}
+
+.rewards-list {
+    text-align: left;
+    align-content: center;
+    margin-left: 200px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 32px;
+}
+
+.second-arrow-down {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+
+}
+
+.about-section {
+    background: url(/img/cristal\ \ 1.png) repeat-y, url(/img/fly\ stone.png) repeat-y 100% 0;
+    background-size: contain;
+    margin-bottom: 520px;
+}
+
+.about-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.scrolling {
+    width: 500px;
+    height: 200px;
+
+}
+
+/* Контент Коллекция */
+
+
+.schedule-arrow {
+    display: block;
+    margin-top: 52px;
+    margin-left: 790px;
+    margin-right: auto;
+}
+
+.main-card {
+    float: left;
+    margin-right: 0;
+    margin-bottom: 0;
+    box-shadow: 2px 1px 5px rgba(234, 146, 62, 0.3);
+}
+
+.main-card-border::after {
+    content: "";
+    display: block;
+    border: 1px solid #FDE840;
+    position: absolute;
+    box-sizing: border-box;
+    width: 378px;
+    height: 562px;
+    top: 175px;
+    left: 270px;
+    z-index: 1;
+}
+
+.main-card-border::before {
+    content: "";
+    display: block;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    box-sizing: border-box;
+    width: 378px;
+    height: 562px;
+    top: 215px;
+    left: 240px;
+    z-index: 10;
+}
+
+.name-character {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-top: 35px;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 0 300px 0 0;
+    position: relative;
+}
+
+.character-description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 110px 0 0;
+}
+
+.characteristic {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border: 1px solid #FFFFFF;
+}
+
+.container {
+    display: flex;
+    padding-left: 80px;
+}
+
+.sec-container {
+    display: grid;
+    padding-left: 60px;
+}
+
+.charac-item {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+form {
+    position: relative;
+    margin: 0 auto;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.search {
+    margin-top: 50px;
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    border: 1px solid #FDE840;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.search-button {
+    height: 17px;
+    width: 17px;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+    background-image: url(/img/Vector.png);
+    background-repeat: no-repeat;
+
+}
+
+.search-button::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 23px;
+    background: #FDE840;
+    transform: rotate(90deg);
+    margin: 9px 9px 9px -17px;
+
+}
+
+::-webkit-input-placeholder {
+    font-family: "SF UI Text";
+    font-weight: 300;
+    font-style: italic;
+    font-size: 10px;
+    color: #FFFFFF;
+
+}
+
+.arrow-dowm-collection {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.characters-card {
+    margin-bottom: 120px;
+}
+
+.characters-card-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-left: 0px;
+    margin-top: 50px;
+    grid-row-gap: 35px;
+}
+
+.card-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+
+.card-button {
+    width: 109px;
+     height: 33px;
+     text-align: center;
+     line-height: 20px;
+     display: block;
+     margin: 20px auto;
+     font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #0C2A3D;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: -4px 3px 0px #2EE5FF;
+    background-image: url(/img/vec1.png);
+    background-repeat: no-repeat;
+    background-position: 95% center;
+}
+
+.pagination {
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+#first-pagination {
+    width: 34px;
+    height: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#second-pagination {
+    width: 50px;
+    height: 27px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+}
+
+#first-pagination::placeholder {
+    text-align: center;
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2EE5FF;
+}
+
+#second-pagination::placeholder {
+    text-align: center;
+    font-family: "Montserrat", sans-serif ;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 23px;
+    color: #2EE5FF;
+}
+
+.first-card:before {
+    content: "";
+    position: absolute;
+    display: block;
+    border: 1px solid #2EE5FF;
+    width: 198px;
+    height: 292px;
+    top: 880px;
+    left: 252px;
+}
+
+/* Анпэкинг контент */
+
+.unpacking-heading {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    line-height: 122px;
+    text-transform: uppercase;
+    text-shadow: -5px 2px 0px #2EE5FF;
+    margin-right: 330px;
+    margin-top: -15px;
+    margin-bottom: 0px;
+}
+
+.main-pack {
+    float: left;
+    margin-right: 0px;
+    margin-bottom: 0;
+    margin-top: 90px;
+}
+
+.pack-num {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 1000px;
+    margin-top: -30px;
+}
+
+.pack-cards {
+    max-width: 678px;
+    max-height: 433px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 112px;
+    padding-top: 30px;
+
+
+}
+
+.pack-card {
+    margin-right: 25px;
+}
+
+.last-card {
+    margin-left: 715px;
+    margin-top: 14px;
+    margin-bottom: 135px;
+}
+
+.pack-series {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.pack-cards::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 730px;
+    top: 290px;
+    width: 678px;
+    height: 433px;
+    background:#000000;
+    opacity: 15%;
+    z-index: 10;
+}
+
+.pack-cards::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid #FFFFFF;
+    width: 678px;
+    height: 433px;
+    left: 730px;
+    top: 290px;
+}
+
+.line {
+    margin-top: 150px;
+}
+
+.scroller-pack {
+    margin-left: 1110px;
+    margin-top: -540px;
+}
+
+.arrow-pack {
+    margin-left: 1105px;
+    margin-top: 340px;
+}
+
+.stone {
+    margin-top: -50px;
+    margin-left: -300px;
+}
+
+.girl {
+    margin-top: -800px;
+    margin-left: 800px;
+}
+
+
+/* Стакинг контент */
+
+.staking-main-card {
+    margin-top: 35px;
+
+}
+
+.staking-card-border::after {
+    content: "";
+    display: block;
+    border: 1px solid #FDE840;
+    position: absolute;
+    box-sizing: border-box;
+    width: 378px;
+    height: 562px;
+    top: 175px;
+    left: 270px;
+    z-index: 1;
+}
+
+.staking-card-border::before {
+    content: "";
+    display: block;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    box-sizing: border-box;
+    width: 378px;
+    height: 562px;
+    top: 215px;
+    left: 240px;
+    z-index: 10;
+}
+
+.staking-block {
+    display: flex;
+}
+
+.first-block {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 37px;
+    text-transform: uppercase;
+}
+
+.dif-color {
+    color: #FDE840;
+}
+
+.second-block {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.first-block::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 920px;
+    top: 220px;
+    width: 235px;
+    height: 250px;
+    background:#000000;
+    opacity: 15%;
+    z-index: 10;
+}
+
+.first-block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid #2EE5FF;
+    width: 235px;
+    height: 250px;
+    left: 920px;
+    top: 220px;
+}
+
+.second-block::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1210px;
+    top: 220px;
+    width: 235px;
+    height: 250px;
+    background:#000000;
+    opacity: 15%;
+    z-index: 10;
+}
+
+.second-block::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid #2EE5FF;
+    width: 235px;
+    height: 250px;
+    left: 1210px;
+    top: 220px;
+}
+
+.block-list {
+    margin-left: 700px;
+    margin-top: -515px;
+}
+
+.block-item {
+    margin-top: 40px;
+}
+
+.second-block-list {
+    margin-left: 110px;
+    margin-top: -445px;
+}
+
+.second-block-item {
+    margin-top: 40px;
+    margin-left: 190px;
+}
+
+.staking-fire {
+    margin-left: 440px;
+    margin-top: -150px;
+    margin-bottom: 120px;
+}
+
+.first-line-card {
+    margin-top: 50px;
+    margin-left: 80px;
+    display: flex;
+}
+
+.second-line-card {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.line-card {
+    margin-right: 30px;
+}
+
+.staking-card-nav {
+    margin-top: 50px;
+    margin-left: 530px;
+}
+
+/* Турнамент контент */
+
+
+.users-information {
+    display: flex;
+}
+
+.users-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-shadow: -2px 1px 0px #FDE840;
+    margin-bottom: 60px;
+}
+
+.line-users-info {
+    position: absolute;
+    margin-top: 50px;
+}
+
+.name-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FDE840;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.rank-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FDE840;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.ani-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 30px;
+    line-height: 37px;
+    color: #2EE5FF;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.name-list {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.name-item {
+    margin-bottom: 15px;
+}
+
+.rank-item {
+    margin-bottom: 12px;
+}
+
+.ani-item {
+    margin-bottom: 12px;
+}
+
+.rank-list {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.ani-list {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #2EE5FF;
+}
+
+.your-info-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-shadow: -2px 1px 0px #2EE5FF;
+}
+
+.tour-block-f {
+    margin-right: 80px;
+}
+
+.tour-block-s {
+    margin-right: 80px;
+}
+
+.all-blocks {
+    display: flex;
+}
+
+.your-block {
+    margin-left: 350px;
+}
+
+.avatar {
+    position: absolute;
+    margin-top: 100px;
+}
+
+.avatar-s {
+    position: absolute;
+    margin-top: 5px;
+}
+
+
+.name-card-heading {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 120px;
+    margin-left: 180px;
+}
+
+.your-information::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1030px;
+    top: 325px;
+    width: 407px;
+    height: 195px;
+    background:#000000;
+    opacity: 15%;
+    z-index: 10;
+}
+
+.your-information::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid #2EE5FF;
+    border-radius: 10px;
+    width: 407px;
+    height: 195px;
+    left: 1030px;
+    top: 325px;
+}
+
+
+.name-line {
+    margin-left: 180px;
+}
+
+.first-info-card {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 70px;
+}
+
+.second-info-card {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+
+.tour-info-line {
+    margin-left: 140px;
+    margin-top: -5px;
+}
+
+.tour-info-sec {
+    margin-left: 140px;
+    margin-top: -5px;
+}
+
+.your-information-sec::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1030px;
+    top: 650px;
+    width: 407px;
+    height: 195px;
+    background:#000000;
+    opacity: 15%;
+    z-index: 10;
+}
+
+.your-information-sec::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 3px solid #FDE840;
+    border-radius: 10px;
+    width: 407px;
+    height: 195px;
+    left: 1030px;
+    top: 650px;
+}
+
+.name-card-heading-s {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 180px;
+    margin-top: 170px;
+}
+
+.name-line-s {
+    margin-left: 180px;
+}
+
+.first-info-card-s {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 70px;
+}
+
+.second-info-card-s {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 21px;
+    margin-top: 20px;
+}
+
+.first-info {
+    margin-left: 140px;
+    margin-top: -5px;
+}
+
+.second-info {
+    margin-left: 140px;
+    margin-top: -5px;
+}
+
+.tournament-card-list {
+    display: flex;
+    margin-top: 320px;
+}
+
+.tour-card {
+    margin-left: 30px;
+}
+
+.tour-arrow {
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.tour-stone {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+/* Футер */
+
+.main-footer {
+    min-height: 322px;
+    margin-top: 1305px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0512097) 0%, #000000 100%);
+}
+
+.collection-footer {
+    min-height: 322px;
+    margin-top: 670px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0512097) 0%, #000000 100%);
+}
+
+.unpacking-footer {
+    min-height: 322px;
+    margin-top: 415px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0512097) 0%, #000000 100%);
+}
+
+.staking-footer {
+    min-height: 322px;
+    margin-top: 800px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0512097) 0%, #000000 100%);
+}
+
+.tournament-footer {
+    min-height: 322px;
+    margin-top: 150px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0512097) 0%, #000000 100%);
+}
+
+.footer {
+    display: flex;
+    position: relative;
+    float: right;
+    margin-right: 300px;
+}
+
+.footer-heading {
+    font-family: "GT America", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2EE5FF;
+
+}
+
+.footer-list {
+    font-family: "GT America", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 22px;
+}
+
+.info-footer {
+    margin-left: 80px;
+}
+
+.contacts-footer {
+    margin-left: 80px;
+}
+
+.footer-item {
+    margin-top: 8px;
+}
+
+.dif-col {
+    color: #2EE5FF;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-icon {
+    margin-top: 200px;
+    margin-left: -50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-desc {
+    font-family: "GT America", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #2EE5FF;
+    margin-left: 200px;
+}
